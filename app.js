@@ -49,7 +49,7 @@ if (process.env.NODE !== "production") {
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.use(express.json());
-app.use(express.static(path.resolve(__dirname, "./client/dist")));
+app.use(express.static(path.resolve(__dirname, "./Client/dist")));
 
 app.use(cookieParser(process.env.JWT_SECRET));
 // app.use("/api/v1", express.static("./public"));
