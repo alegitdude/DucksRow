@@ -5,12 +5,12 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "setup-production": "npm run install-Client && npm run build-Client && npm install",
-    "install-Client": "cd Client && npm install",
-    "build-Client": "cd Client && npm run build",
-    "server": "nodemon server --ignore Client",
-    "Client": "npm run dev --prefix Client",
-    "start": "concurrently --kill-others-on-fail \" npm run server\" \" npm run Client\""
+    "setup-production": "npm run install-client && npm run build-client && npm install",
+    "install-client": "cd client && npm install",
+    "build-client": "cd client && npm run build",
+    "server": "nodemon server --ignore client",
+    "client": "npm run dev --prefix client",
+    "start": "concurrently --kill-others-on-fail \" npm run server\" \" npm run client\""
   },
   "author": "",
   "license": "ISC",

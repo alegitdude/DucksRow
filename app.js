@@ -49,7 +49,7 @@ if (process.env.NODE !== "production") {
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.use(express.json());
-app.use(express.static(path.resolve(__dirname, "./Client/dist")));
+app.use(express.static(path.resolve(__dirname, "./client/dist")));
 
 app.use(cookieParser(process.env.JWT_SECRET));
 // app.use("/api/v1", express.static("./public"));
@@ -66,7 +66,7 @@ app.use("/api/v1/reviews", reviewRouter);
 app.use("/api/v1/orders", orderRouter);
 
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "./Client/dist", "index.html"));
+  res.sendFile(path.resolve(__dirname, "./client/dist", "index.html"));
 });
 
 app.use(notFoundMiddleware);
