@@ -6,10 +6,10 @@
   "type": "module",
   "scripts": {
     "setup-production": "npm run install-Client && npm run build-Client && npm install",
-    "install-client": "cd Client && npm install",
-    "build-client": "cd Client && npm run build",
+    "install-Client": "cd Client && npm install",
+    "build-Client": "cd Client && npm run build",
     "server": "nodemon server --ignore Client",
-    "client": "npm run dev --prefix Client",
+    "Client": "npm run dev --prefix Client",
     "start": "concurrently --kill-others-on-fail \" npm run server\" \" npm run Client\""
   },
   "author": "",
