@@ -55,7 +55,7 @@ app.use(cookieParser(process.env.JWT_SECRET));
 app.use("/api/v1", express.static("./public"));
 app.use(fileUpload());
 
-app.get("/", (req, res) => {
+app.get("/api/v1", (req, res) => {
   res.send("e-commerce api");
 });
 
