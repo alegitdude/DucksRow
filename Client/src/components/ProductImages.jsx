@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const ProductImages = ({ image }) => {
-  const url = "http://localhost:3000/api/v1";
+  const url = "https://ducks-row.onrender.com/api/v1";
   return (
     <Wrapper>
       <img src={url + image} alt="Product Image" className="main" />

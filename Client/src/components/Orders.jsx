@@ -13,7 +13,7 @@ const Orders = () => {
   const getAllMyOrders = async () => {
     try {
       const { data } = await axios.get(
-        "http://localhost:3000/api/v1/orders/showAllMyOrders"
+        "https://ducks-row.onrender.com/api/v1/orders/showAllMyOrders"
       );
       setOrders(data.orders);
     } catch (error) {

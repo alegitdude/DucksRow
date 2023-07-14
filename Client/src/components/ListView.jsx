@@ -3,7 +3,7 @@ import { formatPrice } from "../utils/helpers";
 import { Link } from "react-router-dom";
 
 const ListView = ({ products }) => {
-  const url = "http://localhost:3000/api/v1";
+  const url = "https://ducks-row.onrender.com/api/v1";
   return (
     <Wrapper>
       {products.map((product) => {

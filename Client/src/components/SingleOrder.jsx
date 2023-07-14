@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";
 const SingleOrder = ({ _id, total, orderItems, updatedAt }) => {
   const paidOn = new Date(updatedAt);
   const paid = paidOn.toDateString();
-  const url = "http://localhost:3000/api/v1";
+  const url = "https://ducks-row.onrender.com/api/v1";
   return (
     <Wrapper>
       <div className="items">

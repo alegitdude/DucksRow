@@ -33,11 +33,14 @@ const CheckoutForm = () => {
 
   const createPaymentIntent = async () => {
     try {
-      const { data } = await axios.post("http://localhost:3000/api/v1/orders", {
-        cart: cart,
-        shippingFee,
-        totalAmount,
-      });
+      const { data } = await axios.post(
+        "https://ducks-row.onrender.com/api/v1/orders",
+        {
+          cart: cart,
+          shippingFee,
+          totalAmount,
+        }
+      );
       setClientSecret(data.clientSecret);
       setOrder(data.order);
     } catch (error) {

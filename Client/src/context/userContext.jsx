@@ -24,12 +24,12 @@ const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const url = "http://localhost:3000/api/v1";
+  const url = "https://ducks-row.onrender.com/api/v1";
   const loginUser = async (currentUser) => {
     dispatch({ type: LOGIN_USER_BEGIN });
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/v1/auth/login",
+        "https://ducks-row.onrender.com/api/v1/auth/login",
         currentUser,
         {
           withCredentials: true,

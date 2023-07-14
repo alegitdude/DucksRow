@@ -4,7 +4,7 @@ import SearchIcon from "../assets/SearchIcon";
 import { formatPrice } from "../utils/helpers";
 
 const Product = ({ image, name, price, id }) => {
-  const url = "http://localhost:3000/api/v1";
+  const url = "https://ducks-row.onrender.com/api/v1";
   return (
     <Wrapper>
       <div className="container">
