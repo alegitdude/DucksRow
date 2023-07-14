@@ -52,7 +52,7 @@ app.use(express.json());
 app.use(express.static(path.resolve(__dirname, "./client/dist")));
 
 app.use(cookieParser(process.env.JWT_SECRET));
-app.use("/api/v1", express.static("./public"));
+// app.use("/api/v1", express.static("./public"));
 app.use(fileUpload());
 
 app.get("/api/v1", (req, res) => {
