@@ -23,7 +23,7 @@ const Profile = () => {
     }
     try {
       const { data } = await axios.patch(
-        "http://localhost:5173/api/v1/users/updateUserPassword",
+        "https://ducks-row.onrender.com/api/v1/users/updateUserPassword",
         { oldPassword, newPassword }
       );
       console.log(e);
