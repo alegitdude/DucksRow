@@ -43,6 +43,14 @@ app.use(cors());
 app.use(xss());
 app.use(mongoSanitize());
 
+app.use(function (req, res, next) {
+  res.setHeader(
+    "Content-Security-Policy",
+    "default-src 'self'; font-src 'self'; img-src 'self'; script-src 'self', https://js.stripe.com ; style-src 'self'; frame-src 'self', https://js.stripe.com, https://hooks.stripe.com"
+  );
+  next();
+});
+
 if (process.env.NODE !== "production") {
   app.use(morgan("dev"));
 }
