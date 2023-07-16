@@ -46,7 +46,7 @@ app.use(mongoSanitize());
 app.use(function (req, res, next) {
   res.setHeader(
     "Content-Security-Policy",
-    "default-src 'self'; font-src 'self'; img-src 'self'; script-src 'self', https://js.stripe.com, https://js.stripe.com/v3 ; style-src 'self'; frame-src 'self', https://js.stripe.com, https://hooks.stripe.com"
+    "default-src 'self', https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap; font-src 'self'; img-src 'self'; script-src 'self', https://js.stripe.com, https://js.stripe.com/v3 ; style-src 'self', https://fonts.googleapis.com/css2?family=Klee+One:wght@400;600&display=swap; frame-src 'self', https://js.stripe.com, https://hooks.stripe.com"
   );
   next();
 });
