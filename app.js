@@ -48,6 +48,8 @@ app.use(
           "https://hooks.stripe.com",
           "https://js.stripe.com",
           "https://maps.googleapis.com",
+          "https://connect-js.stripe.com",
+          "https://checkout.stripe.com",
         ],
         "default-src": [
           "'self'",
