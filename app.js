@@ -43,6 +43,10 @@ app.use(
     contentSecurityPolicy: {
       directives: {
         "script-src": ["'self'", "https://js.stripe.com/v3"],
+        "default-src": [
+          "'self'",
+          "https://js.stripe.com/v3/m-outer-93afeeb17bc37e711759584dbfc50d47.html#url=https%3A%2F%2Fducks-row.onrender.com%2F&title=Ducks%20Row&referrer=&muid=6499db9f-bd13-49c4-afd6-5e5b11ec88681fc5b6&sid=35e84f85-efb9-4a7c-8fbc-a408e9c233e3f70c59&version=6&preview=false",
+        ],
       },
     },
   })
