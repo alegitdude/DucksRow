@@ -37,22 +37,16 @@ app.use(
     max: 100,
   })
 );
-app.use(helmet());
-// app.use(
-//   helmet.contentSecurityPolicy({
-//     directives: {
-//       defaultSrc: ["'self'"],
-//       scriptSrc: [
-//         "'self'",
-//         "fonts.googleapis.com",
-//         "js.stripe.com",
-//         "js.stripe.com/v3",
-//       ],
-//       styleSrc: ["'self'", "fonts.googleapis.com"],
-//       frameSrc: ["'self'", "js.stripe.com", "hooks.stripe.com"],
-//     },
-//   })
-// );
+
+app.use(
+  helmet({
+    contentSecurityPolicy: {
+      directives: {
+        "script-src": ["'self'", "https://js.stripe.com/v3"],
+      },
+    },
+  })
+);
 app.use(cors());
 app.use(xss());
 app.use(mongoSanitize());
