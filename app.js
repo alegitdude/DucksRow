@@ -42,14 +42,9 @@ app.use(
   helmet.contentSecurityPolicy({
     directives: {
       defaultSrc: ["'self'"],
-      scriptSrc: [
-        "'self'",
-        "fonts.googleapis.com",
-        "js.stripe.com",
-        "js.stripe.com/v3",
-      ],
-      styleSrc: ["'self'", "fonts.googleapis.com"],
-      frameSrc: ["'self'", "js.stripe.com", "hooks.stripe.com"],
+      scriptSrc: ["'self'"],
+      styleSrc: ["'self'"],
+      frameSrc: ["'self'"],
     },
   })
 );
