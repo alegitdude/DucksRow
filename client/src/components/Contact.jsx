@@ -46,7 +46,7 @@ const Contact = () => {
                   </select>
                 </div>
 
-                <button type="button" className="form-cell btn ">
+                <button type="button" className="form-cell btn btn--form ">
                   Sign up!
                 </button>
               </form>
