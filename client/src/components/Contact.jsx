@@ -147,6 +147,7 @@ const Wrapper = styled.div`
   .cta-form button {
     align-self: end;
     width: 80%;
+    justify-self: center;
   }
   .btn-div {
     width: 100%;
