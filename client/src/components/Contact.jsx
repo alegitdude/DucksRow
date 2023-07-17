@@ -145,12 +145,12 @@ const Wrapper = styled.div`
   }
 
   .cta-form button {
-    display: flex;
+    display: inline-block;
     align-self: end;
     justify-self: center;
-    justify-content: center;
     width: 80%;
     text-align: center;
+    justify-self: center;
   }
 
   @media (max-width: 1000px) {
