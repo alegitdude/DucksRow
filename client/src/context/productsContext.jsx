@@ -29,7 +29,7 @@ const ProductsContext = createContext();
 export const ProductsProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  const url = "https://ducks-row.onrender.com//api/v1/products/";
+  const url = "https://ducks-row.onrender.com/api/v1/products/";
 
   const openSidebar = () => {
     dispatch({ type: SIDEBAR_OPEN });
