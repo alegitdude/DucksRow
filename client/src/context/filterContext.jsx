@@ -2,8 +2,8 @@ import { useEffect, useContext, useReducer, createContext } from "react";
 import reducer from "../reducers/filterReducer";
 import {
   LOAD_PRODUCTS,
-  SET_GRIDVIEW,
-  SET_LISTVIEW,
+  SET_GRID_VIEW,
+  SET_LIST_VIEW,
   UPDATE_SORT,
   SORT_PRODUCTS,
   UPDATE_FILTERS,
@@ -43,10 +43,10 @@ export const FilterProvider = ({ children }) => {
   }, [state.sort, state.filters]);
   // functions
   const setGridView = () => {
-    dispatch({ type: SET_GRIDVIEW });
+    dispatch({ type: SET_GRID_VIEW });
   };
   const setListView = () => {
-    dispatch({ type: SET_LISTVIEW });
+    dispatch({ type: SET_LIST_VIEW });
   };
   const updateSort = (e) => {
     const value = e.target.value;
