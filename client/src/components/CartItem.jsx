@@ -5,7 +5,7 @@ import TrashIcon from "../assets/TrashIcon";
 import { useCartContext } from "../context/cartContext";
 
 const CartItem = ({ id, image, name, color, price, amount }) => {
-  const url = "https://ducks-row.onrender.com/api/v1";
+  const url = "https://ducks-row.onrender.com/";
   const { removeItem, toggleAmount } = useCartContext();
   const increase = () => {
     toggleAmount(id, "inc");
