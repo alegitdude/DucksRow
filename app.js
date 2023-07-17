@@ -50,6 +50,7 @@ app.use(
           "https://maps.googleapis.com",
           "https://connect-js.stripe.com",
           "https://checkout.stripe.com",
+          "https://ducks-row.onrender.com",
         ],
         "default-src": ["'self'", "https://js.stripe.com"],
       },
