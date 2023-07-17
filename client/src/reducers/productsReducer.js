@@ -21,7 +21,7 @@ const productsReducer = (state, action) => {
     return { ...state, productsLoading: true };
   }
   if (action.type === GET_PRODUCTS_SUCCESS) {
-    const featuredProducts = action.payload.filter(
+    const featuredProducts = action.payload?.filter(
       (product) => product.featured === true
     );
     return {

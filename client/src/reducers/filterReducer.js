@@ -1,7 +1,7 @@
 import {
   LOAD_PRODUCTS,
-  SET_LISTVIEW,
-  SET_GRIDVIEW,
+  SET_LIST_VIEW,
+  SET_GRID_VIEW,
   UPDATE_SORT,
   SORT_PRODUCTS,
   UPDATE_FILTERS,
@@ -20,10 +20,10 @@ const filterReducer = (state, action) => {
       filters: { ...state.filters, maxPrice: maxPrice, price: maxPrice },
     };
   }
-  if (action.type === SET_GRIDVIEW) {
+  if (action.type === SET_GRID_VIEW) {
     return { ...state, gridView: true };
   }
-  if (action.type === SET_LISTVIEW) {
+  if (action.type === SET_LIST_VIEW) {
     return { ...state, gridView: false };
   }
   if (action.type === UPDATE_SORT) {
