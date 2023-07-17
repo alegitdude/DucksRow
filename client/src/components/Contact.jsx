@@ -46,7 +46,9 @@ const Contact = () => {
                   </select>
                 </div>
 
-                <button className="form-cell btn btn--form">Sign up!</button>
+                <button type="button" className="form-cell btn ">
+                  Sign up!
+                </button>
               </form>
             </div>
             <img
@@ -149,6 +151,8 @@ const Wrapper = styled.div`
 
   .btn--form {
     width: 80%;
+    text-align: center;
+    justify-self: center;
   }
   @media (max-width: 1000px) {
     .cta-photo {
