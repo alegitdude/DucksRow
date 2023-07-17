@@ -100,6 +100,7 @@ const Wrapper = styled.div`
     width: 80%;
     margin-right: 2.4rem;
     border: 1rem dashed var(--primary-yellow);
+    border-radius: var(--radius);
   }
 
   .cta-form {
