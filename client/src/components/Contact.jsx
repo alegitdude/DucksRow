@@ -47,7 +47,7 @@ const Contact = () => {
                 </div>
 
                 <button type="button" className="form-cell btn btn--form ">
-                  <div>Sign up!</div>
+                  <div className="btn-div">Sign up!</div>
                 </button>
               </form>
             </div>
@@ -145,12 +145,13 @@ const Wrapper = styled.div`
   }
 
   .cta-form button {
-    display: flex;
     align-self: end;
-    justify-content: center;
     width: 80%;
-    text-align: center;
-    justify-self: center;
+  }
+  .btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   @media (max-width: 1000px) {
