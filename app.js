@@ -82,7 +82,7 @@ app.use("/api/v1/users", userRouter);
 app.use("/api/v1/products", productRouter);
 app.use("/api/v1/reviews", reviewRouter);
 app.use("/api/v1/orders", orderRouter);
-
+app.use(express.static(path.join(__dirname, "public")));
 app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "./client/dist", "index.html"));
 });
