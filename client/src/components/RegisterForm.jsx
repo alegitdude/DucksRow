@@ -4,7 +4,7 @@ import { genericErrorAlert } from "../Alerts";
 import { useUserContext } from "../context/userContext";
 import { useNavigate } from "react-router-dom";
 const RegisterForm = () => {
-  const naviagtion = useNavigate();
+  const navigation = useNavigate();
   const { registerUser } = useUserContext();
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,7 +16,7 @@ const RegisterForm = () => {
       return;
     }
     registerUser(newUser);
-    naviagtion("/login");
+    navigation("/login");
     e.currentTarget.reset();
   };
   return (
