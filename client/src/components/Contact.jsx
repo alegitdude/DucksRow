@@ -148,12 +148,10 @@ const Wrapper = styled.div`
     display: flex;
     align-self: end;
     justify-self: center;
-  }
-
-  .btn--form {
     width: 80%;
     text-align: center;
   }
+
   @media (max-width: 1000px) {
     .cta-photo {
       margin: 0;
