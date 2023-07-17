@@ -152,7 +152,6 @@ const Wrapper = styled.div`
   .btn--form {
     width: 80%;
     text-align: center;
-    justify-self: center;
   }
   @media (max-width: 1000px) {
     .cta-photo {
@@ -178,6 +177,7 @@ const Wrapper = styled.div`
     }
     .btn--form {
       margin-top: 1rem;
+      text-align: center;
     }
     .form-cell {
       min-width: 16rem;

@@ -31,6 +31,7 @@ const Wrapper = styled.article`
   img {
     border-radius: var(--radius);
     transition: var(--transition);
+    max-width: 24.375rem;
   }
   .link {
     position: absolute;
