@@ -74,7 +74,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![DucksRow Screen Shot]](/uploads/DucksRowScreenShot.png)
+[![DucksRow Screen Shot]](/public/uploads/Ducks%20Row%20Screenshot.png)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -143,7 +143,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 rickbhughey@gmail.com
 
-Project Link: [https://github.com/github_alegitdude/Build-Ideas](https://github.com/alegitdude/Build-Ideas)
+Project Link: [https://github.com/github_alegitdude/DucksRow](https://github.com/alegitdude/DucksRow)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
