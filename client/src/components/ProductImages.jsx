@@ -15,6 +15,7 @@ const Wrapper = styled.section`
   }
   img {
     width: 100%;
+    max-width: 51.5rem;
     display: block;
     border-radius: var(--radius);
     object-fit: cover;

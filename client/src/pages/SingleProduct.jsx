@@ -111,7 +111,7 @@ const Wrapper = styled.main`
     }
   }
 
-  @media (min-width: 700px) {
+  @media (min-width: 800px) {
     .product-center {
       grid-template-columns: 1fr 1fr;
       align-items: center;
