@@ -107,11 +107,11 @@ const Wrapper = styled.main`
     display: grid;
     grid-template-columns: 125px 1fr;
     span {
-      font-weight: 700;
+      font-weight: 600;
     }
   }
 
-  @media (min-width: 992px) {
+  @media (min-width: 800px) {
     .product-center {
       grid-template-columns: 1fr 1fr;
       align-items: center;
