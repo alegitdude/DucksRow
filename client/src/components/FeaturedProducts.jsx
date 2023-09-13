@@ -45,7 +45,7 @@ const Wrapper = styled.section`
     /* gap: 2.5rem; */
     img {
       height: 25rem;
-      max-width: 15rem;
+      max-width: 20rem;
     }
   }
   .btn {
