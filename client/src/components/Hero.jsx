@@ -32,6 +32,7 @@ const Wrapper = styled.section`
   }
   .content {
     margin-top: 5rem;
+    text-align: center;
   }
   .accent-img {
     border-radius: var(--radius);
@@ -50,10 +51,11 @@ const Wrapper = styled.section`
   @media (min-width: 992px) {
     .content {
       margin-top: 0rem;
+      text-align: start;
     }
     display: grid;
     place-items: center;
-    height: calc(100vh - 5rem);
+    height: calc(100vh - 8rem);
     grid-template-columns: 1fr 1fr;
     gap: 6rem;
     padding: 0 2rem;

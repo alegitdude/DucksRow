@@ -56,6 +56,7 @@ const Services = () => {
 const Wrapper = styled.section`
   h3,
   h4 {
+    text-align: center;
     color: var(--background-black);
   }
   padding: 5rem 0;

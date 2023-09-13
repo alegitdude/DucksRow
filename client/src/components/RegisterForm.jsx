@@ -60,6 +60,13 @@ const RegisterForm = () => {
           Register
         </button>
       </form>
+      <hr />
+      <span className="forgot">
+        Already have an account? Click&nbsp;
+        <Link className="here" to="/login">
+          HERE
+        </Link>
+      </span>
     </Wrapper>
   );
 };
@@ -69,6 +76,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 25rem;
+  height: 30rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   background-image: linear-gradient(
     to bottom,

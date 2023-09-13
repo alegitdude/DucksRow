@@ -78,7 +78,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   width: 25rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.479);
   background-image: linear-gradient(
     to bottom,
     rgba(255, 236, 153, 0.507),

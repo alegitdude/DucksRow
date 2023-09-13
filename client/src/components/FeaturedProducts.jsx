@@ -1,4 +1,5 @@
 import { useProductsContext } from "../context/productsContext";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Loading from "./Loading";
 import Error from "./Error";
@@ -26,6 +27,9 @@ const FeaturedProducts = () => {
           return <Product key={product.id} {...product} />;
         })}
       </div>
+      <Link to="/products" className="btn hero-btn">
+        See All Creations!
+      </Link>
     </Wrapper>
   );
 };
@@ -41,6 +45,7 @@ const Wrapper = styled.section`
     /* gap: 2.5rem; */
     img {
       height: 25rem;
+      max-width: 15rem;
     }
   }
   .btn {
