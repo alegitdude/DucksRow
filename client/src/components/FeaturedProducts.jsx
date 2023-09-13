@@ -44,7 +44,7 @@ const Wrapper = styled.section`
     display: grid;
     /* gap: 2.5rem; */
     img {
-      height: 25rem;
+      height: 15rem;
       max-width: 20rem;
     }
   }
@@ -57,6 +57,10 @@ const Wrapper = styled.section`
   @media (min-width: 576px) {
     .featured {
       grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      img {
+        height: 25rem;
+        max-width: 20rem;
+      }
     }
   }
 `;
