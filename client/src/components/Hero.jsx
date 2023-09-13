@@ -1,20 +1,34 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import heroimg from "/hero-rug.avif";
-import heroimg2 from "../assets/Logo-inspiration.jpg";
+import heroimg2 from "../assets/crochet-duck.png";
+import heroShirt from "/hero-shirt.avif";
 const Hero = () => {
   return (
     <Wrapper className="section-center">
       <article className="content">
-        <h1>Ducks Row</h1>
-        <h2>Handmade Custom Crochet</h2>
-        <Link to="/products" className="btn hero-btn">
-          Explore
-        </Link>
+        <div className="header">
+          <h1>Ducks Row</h1>
+          <h2>Handmade Custom Crochet</h2>
+        </div>
+        <div className="sale-banner">
+          <img src={heroShirt} alt="hero sweater" className="hero-shirt" />
+          <span className="sale">
+            <h1>20% Off Fall Sale!</h1>
+          </span>
+          <Link to="/products" className="btn hero-btn sale-btn">
+            Explore
+          </Link>
+        </div>
+        <div className="explore-container">
+          <Link to="/products" className="btn hero-btn reg-btn">
+            Explore
+          </Link>
+          <img src={heroimg2} alt="crochet shirt" className="accent-img" />
+        </div>
       </article>
       <article className="img-container">
         <img src={heroimg} alt="crochet rug" className="main-img" />
-        <img src={heroimg2} alt="crochet shirt" className="accent-img" />
       </article>
     </Wrapper>
   );
@@ -27,15 +41,52 @@ const Wrapper = styled.section`
   align-items: center;
   margin-bottom: 2rem;
   gap: 1rem;
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .main-img {
     display: none;
   }
+  .sale-banner {
+    width: 100%;
+    height: 30rem;
+    position: relative;
+    border-radius: var(--radius);
+  }
+  .sale {
+    display: block;
+    margin-bottom: 20rem;
+    position: absolute;
+    top: 45%;
+    right: 50%;
+    transform: translate(50%);
+    color: white;
+  }
+  .hero-shirt {
+    height: 30rem;
+    width: 100%;
+    border-radius: var(--radius);
+  }
+  .reg-btn {
+    display: none;
+  }
+  .sale-btn {
+    position: absolute;
+    top: 75%;
+    right: 50%;
+    transform: translate(50%);
+    font-size: 2.5rem;
+  }
   .content {
-    margin-top: 5rem;
     text-align: center;
+    width: 100%;
+    position: relative;
   }
   .accent-img {
     border-radius: var(--radius);
+    display: none;
   }
   img {
     width: 20rem;
@@ -48,10 +99,27 @@ const Wrapper = styled.section`
     color: var(--color-text-grey);
     font-size: 1rem;
   }
+  .small-display {
+    display: block;
+  }
+  .explore-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
   @media (min-width: 992px) {
+    .sale-banner {
+      display: none;
+    }
+    .sale-btn {
+      display: none;
+    }
+    .reg-btn {
+      display: block;
+    }
     .content {
       margin-top: 0rem;
-      text-align: start;
+      text-align: center;
     }
     display: grid;
     place-items: center;
@@ -59,8 +127,15 @@ const Wrapper = styled.section`
     grid-template-columns: 1fr 1fr;
     gap: 6rem;
     padding: 0 2rem;
+    .explore-container {
+      display: flex;
+      align-items: center;
+    }
     .accent-img {
-      display: none;
+      width: 20rem;
+      margin-bottom: 1.75rem;
+      display: block;
+      margin-top: 1rem;
     }
     h1 {
       margin-bottom: 2rem;
